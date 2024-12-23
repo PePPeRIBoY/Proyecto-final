@@ -1,0 +1,441 @@
+/* Estilos generales para toda la página */
+body {
+    font-family: 'Kanit', sans-serif;
+    /* Usamos la fuente importada */
+    margin: 0;
+    /* Quitamos márgenes predeterminados */
+    padding: 0;
+    /* Quitamos padding predeterminado */
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header {
+    background-color: #2c3e50;
+    /* Color de fondo oscuro */
+
+    position: sticky;
+    /* Hacemos que el menú se quede fijo al hacer scroll */
+    top: 0;
+    /* Posicionamos el menú en la parte superior */
+    z-index: 1000;
+    /* Aseguramos que el menú esté por encima de otros elementos */
+}
+
+/* Estilos para el menú de navegación */
+nav {
+    display: flex;
+    /* Usamos flexbox para organizar los elementos */
+    justify-content: space-between;
+    /* Espaciamos los elementos a los lados */
+    align-items: center;
+    /* Centramos verticalmente los elementos */
+    background-color: #3d4955;
+width: 100%;
+height: 7rem;
+}
+
+/* Estilos para el logo y el título en el menú */
+.nav_inicio {
+    display: flex;
+    /* Usamos flexbox */
+    align-items: center;
+    /* Centramos verticalmente */
+    
+}
+
+.nav_enlaces {
+    display: flex;
+    /* Usamos flexbox */
+    gap: 15px;
+    /* Espacio entre los enlaces */
+    color: #ffffff;
+    padding-left: 5%;
+}
+
+.nav_enlaces a {
+    color: #ffffff;
+    text-decoration: none; /* Quitar subrayado (opcional) */
+}
+
+.nav_enlaces a:hover {
+    color: #398449;
+}
+
+.Logo {
+    max-width: 80px;
+    /* Tamaño máximo del logo */
+    margin: 10px;
+    /* Espacio entre el logo y el título */
+}
+
+.Titulo {
+    color: white;
+    /* Color del texto en blanco */
+    font-size: 24px;
+    /* Tamaño del texto */
+    margin: 20px;
+    /* Quitamos márgenes */
+}
+
+/* Estilos para los iconos en el menú */
+.iconos a {
+    margin-left: 15px;
+    /* Espacio entre los iconos */
+    padding-right: 10px;
+}
+
+/* Estilos para el carrusel */
+.carousel {
+    margin-top: 20px;
+    /* Espacio superior antes del carrusel */
+}
+
+.carousel-item img {
+    height: 500px;
+    /* Altura fija de las imágenes */
+    object-fit: cover;
+    /* Las imágenes cubren todo el espacio disponible */
+}
+
+/* Estilos para el subtítulo en el contenido principal */
+.main_subtitulo_1,
+.main_subtitulo_3 {
+    text-align: center;
+    /* Centramos el texto */
+    margin-top: 40px;
+    /* Espacio superior */
+}
+
+/* Estilos para el subtítulo en el contenido principal alternado */
+.main_subtitulo_2 {
+    text-align: center;
+    /* Centramos el texto */
+    padding-top: 40px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    /* Espacio superior */
+    background-color: #eeeeee;
+}
+
+/* Estilos para las tarjetas de productos */
+.main_cards_1,
+.main_cards_3 {
+    display: flex;
+    /* Usamos flexbox */
+    justify-content: space-around;
+    /* Espaciamos las tarjetas uniformemente */
+    flex-wrap: wrap;
+    /* Permitimos que las tarjetas pasen a la siguiente línea si es necesario */
+    margin-top: 20px;
+    /* Espacio superior */
+}
+
+/* Estilos para las tarjetas de productos alternadas */
+.main_cards_2 {
+    display: flex;
+    /* Usamos flexbox */
+    justify-content: space-around;
+    /* Espaciamos las tarjetas uniformemente */
+    flex-wrap: wrap;
+    /* Permitimos que las tarjetas pasen a la siguiente línea si es necesario */
+    padding: 20px 0;
+    /* Espacio superior */
+    background-color: #eeeeee;
+}
+
+.card {
+    margin: 10px;
+    /* Espacio alrededor de cada tarjeta */
+}
+.productos {
+    display: grid; /* Distribución en cuadrícula */
+    grid-template-columns: 1fr 20%; /* Primera columna flexible, segunda columna 20% */
+    gap: 20px; /* Separación entre productos */
+    margin-top: 20px; /* Margen superior */
+    margin-left: 20px; ;
+}
+.card-body {
+    background: #f4f4f4; /* Fondo claro */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Texto centrado */
+}
+.card-body button {
+    background: #333; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    border: none; /* Sin bordes */
+    padding: 10px 15px; /* Espaciado interno */
+    cursor: pointer; /* Mano al pasar por encima */
+}
+
+.card-body button:hover {
+    background: #555; /* Cambio de color al pasar el cursor */
+}
+
+/* Estilos para el pie de página */
+.contacto {
+    padding: 20px;
+    /* Espacio interno */
+    background-color: #eeeeee;
+    /* Color de fondo claro */
+    text-align: center;
+    /* Centramos el contenido */
+    margin: 40px 100px 0;
+    /* Espacio superior antes del pie de página */
+
+}
+
+.contacto form {
+    margin-top: 20px;
+    /* Espacio superior antes del formulario */
+}
+
+.contacto form h1 {
+    font-size: 24px;
+    /* Tamaño del título del formulario */
+}
+
+.contacto input,
+.contacto textarea {
+    width: 100%;
+    /* Campos ocupan todo el ancho disponible */
+    padding: 10px;
+    /* Espacio interno en los campos */
+    margin-bottom: 10px;
+    /* Espacio inferior entre los campos */
+    border: 1px solid #ced4da;
+    /* Borde gris claro */
+    border-radius: 5px;
+    /* Bordes redondeados */
+}
+
+.contacto button {
+    padding: 10px 20px;
+    /* Espacio interno del botón */
+    background-color: #007bff;
+    /* Color de fondo azul */
+    color: white;
+    /* Color del texto en blanco */
+    border: none;
+    /* Sin borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón */
+}
+
+.contacto button:hover {
+    background-color: #0056b3;
+    /* Color más oscuro al pasar el mouse*/
+}
+
+footer {
+    padding: 20px;
+    /* Espacio interno */
+    background-color: #398449;
+    /* Color de fondo claro */
+    text-align: center;
+    /* Centramos el contenido */
+    margin-top: 40px;
+    /* Espacio superior antes del pie de página */
+    width: 10%;
+    margin-left: 0;
+    margin-right: 0;
+    min-width: none;
+}
+
+.container {
+    max-width: none;
+}
+
+footer a {
+    text-decoration: none;
+    /* Quitamos el subrayado de los enlaces */
+    color: #2c3e50;
+    /* Color azul para el enlace */
+    font-size: 18px;
+    /* Tamaño del texto */
+}
+
+/* Estilos para las imágenes de redes sociales */
+footer .RSocial {
+    width: 40px;
+    /* Ancho de los iconos */
+    margin: 5px;
+    /* Espacio alrededor de cada icono */
+}
+
+footer div #redes {
+    color: white;
+}
+
+.parrafo_quienes_somos { 
+    padding:  20px 100px ;
+}
+/* Estilos para el contenedor del video */
+.video-container {
+    position:static;
+    width: 100%;
+    /* El ancho del video se ajusta al contenedor */
+    padding:  0 10%;
+    /* Relación de aspecto 16:9 (altura = ancho * 9/16) */
+    overflow: hidden;
+}
+#lista-carrito {
+    padding-bottom: 20px; /* Espaciado inferior */
+    border: 1px solid #ccc; /* Borde alrededor del contenedor */
+}
+
+#lista-carrito .producto:nth-child(odd) {
+    background-color: #f1f1f1; /* Fondo claro para filas impares */
+}
+
+#lista-carrito .producto:nth-child(even) {
+    background-color: #ffffff; /* Fondo blanco para filas pares */
+}
+
+#lista-carrito .producto {
+    padding: 10px; /* Espaciado interno para cada producto */
+    display: flex; /* Diseño flexible para contenido */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: space-between; /* Espaciado entre elementos */
+    border-bottom: 1px solid #ddd; /* Línea divisoria */
+    gap: 15px;
+}
+
+#lista-carrito .producto:last-child {
+    border-bottom: none; /* Eliminar borde inferior del último producto */
+}
+
+.resumen-carrito {
+    height: 10rem;
+    width: 10rem;
+
+@media (min-width: 1500px)  {
+    nav {
+        height: 4rem;
+    }
+    /* Ajustamos el tamaño del logo */
+    .Logo {
+        max-width: 60px;
+    }
+
+    /* Las tarjetas se apilan verticalmente */
+    .main_cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Ajustamos el ancho de las tarjetas */
+    .card {
+        width: 80%;
+        /* Las tarjetas ocupan el 80% del ancho */
+    }
+
+    /* Ajustamos la altura de las imágenes del carrusel */
+    .carousel-item img {
+        height: 300px;
+    }
+
+    .contacto {
+        margin: 40px 400px 0;
+    }
+
+    .container {
+        max-width: none;
+    }
+}
+/* Media Queries para pantallas medianas (tablets) */
+@media (min-width: 480px) and (max-width: 1499px) {
+    nav {
+        height: 4rem;
+    }
+}
+/* Media Queries para pantallas medianas (tablets) */
+@media (min-width: 481px) and (max-width: 768px) {
+    nav {
+        height: 7rem;
+    }
+    /* Ajustamos el tamaño del logo */
+    .Logo {
+        max-width: 60px;
+    }
+    /* Las tarjetas se apilan verticalmente */
+    .main_cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Ajustamos el ancho de las tarjetas */
+    .card {
+        width: 80%;
+        /* Las tarjetas ocupan el 80% del ancho */
+    }
+
+    /* Ajustamos la altura de las imágenes del carrusel */
+    .carousel-item img {
+        height: 300px;
+    }
+
+    .contacto {
+        margin: 40px 40px 0;
+    }
+
+    .container {
+        max-width: none;
+    }
+}
+
+/* Media Queries para pantallas pequeñas (celulares) */
+@media (min-width: 320px) and (max-width: 480px) {
+
+    /* Ajustamos el tamaño del logo */
+    .Logo {
+        max-width: 50px;
+    }
+
+    .iconos {
+
+        display: flex;
+        /* Usamos flexbox */
+        flex-direction: column;
+        /* Las opciones se apilan verticalmente */
+        align-items: center;
+    }
+    .productos {
+        grid-template-columns: 1fr; /* Una columna que ocupa todo el ancho */
+        gap: 15px; /* Opcional: ajusta la separación entre los elementos */
+    }
+
+    /* Ajustamos el ancho de las tarjetas */
+    .card {
+        width: 90%;
+        /* Las tarjetas ocupan el 90% del ancho */
+    }
+
+    /* Ajustamos la altura de las imágenes del carrusel */
+    .carousel-item img {
+        height: 200px;
+    }
+
+
+    /* Ajustamos los títulos en el pie de página */
+    .contacto form h1,
+    .contacto h1 {
+        font-size: 20px;
+    }
+
+    
+    /* Ajustamos el tamaño del enlace en el pie de página */
+    footer a {
+        font-size: 16px;
+    }
+
+    .contacto {
+        margin: 40px 0 0;
+    }
+}}
